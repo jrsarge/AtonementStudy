@@ -168,14 +168,22 @@ export default function GraphView({ data }) {
 
           {selectedNode.references && selectedNode.references.length > 0 ? (
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              {selectedNode.references.map(ref => (
-                <li key={ref} style={{
-                  color: '#ccc',
-                  fontSize: 14,
-                  padding: '6px 0',
-                  borderBottom: '1px solid #1e2a3a',
-                }}>
-                  {ref}
+              {selectedNode.references.map(({ ref, quote }) => (
+                <li key={ref} style={{ padding: '10px 0', borderBottom: '1px solid #1e2a3a' }}>
+                  <div style={{ color: '#7ab3e8', fontSize: 12, fontWeight: 600, marginBottom: 6 }}>{ref}</div>
+                  {quote && (
+                    <blockquote style={{
+                      margin: 0,
+                      paddingLeft: 10,
+                      borderLeft: '2px solid #2c3a5a',
+                      color: '#bbb',
+                      fontSize: 13,
+                      lineHeight: 1.6,
+                      fontStyle: 'italic',
+                    }}>
+                      "{quote}"
+                    </blockquote>
+                  )}
                 </li>
               ))}
             </ul>

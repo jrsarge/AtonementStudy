@@ -1,25 +1,161 @@
 {
   "nodes": [
-    { "id": "sin", "label": "sin", "references": ["Bible Dictionary: Atonement"] },
-    { "id": "man from god", "label": "man from god", "references": ["Bible Dictionary: Atonement"] },
-    { "id": "penalty", "label": "penalty", "references": ["Bible Dictionary: Atonement"] },
-    { "id": "atonement", "label": "atonement", "references": ["Bible Dictionary: Atonement", "Ether 3:14", "Moses 4:1–2"] },
-    { "id": "repentance", "label": "repentance", "references": ["Bible Dictionary: Atonement"] },
-    { "id": "atonement's effect", "label": "atonement's effect", "references": ["Bible Dictionary: Atonement"] },
-    { "id": "man to god", "label": "man to god", "references": ["Bible Dictionary: Atonement"] },
-    { "id": "foreordination", "label": "foreordination", "references": ["Ether 3:14", "Moses 4:1–2", "Abr. 3:27"] },
-    { "id": "divine sonship", "label": "divine sonship", "references": ["Ether 3:14"] },
-    { "id": "sinless life", "label": "sinless life", "references": [] },
-    { "id": "all mankind", "label": "all mankind", "references": ["Ether 3:14"] },
-    { "id": "premortal preparation", "label": "premortal preparation", "references": ["Ether 3:14", "Moses 4:1–2"] },
-    { "id": "redemption", "label": "redemption", "references": ["Ether 3:14"] },
-    { "id": "eternal life", "label": "eternal life", "references": ["Ether 3:14"] },
-    { "id": "belief", "label": "belief", "references": ["Ether 3:14"] },
-    { "id": "adoption as children of god", "label": "adoption as children of god", "references": ["Ether 3:14"] },
-    { "id": "submission to god's will", "label": "submission to god's will", "references": ["Moses 4:1–2"] },
-    { "id": "human agency", "label": "human agency", "references": ["Moses 4:1–2"] },
-    { "id": "god", "label": "god", "references": ["Moses 4:1–2"] },
-    { "id": "false redemption", "label": "false redemption", "references": ["Moses 4:1–2"] }
+    {
+      "id": "sin",
+      "label": "sin",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+      ]
+    },
+    {
+      "id": "man from god",
+      "label": "man from god",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+      ]
+    },
+    {
+      "id": "penalty",
+      "label": "penalty",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+      ]
+    },
+    {
+      "id": "atonement",
+      "label": "atonement",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To reconcile man to God. To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." },
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ." },
+        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+      ]
+    },
+    {
+      "id": "repentance",
+      "label": "repentance",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+      ]
+    },
+    {
+      "id": "atonement's effect",
+      "label": "atonement's effect",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+      ]
+    },
+    {
+      "id": "man to god",
+      "label": "man to god",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To reconcile man to God." }
+      ]
+    },
+    {
+      "id": "foreordination",
+      "label": "foreordination",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people." },
+        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+      ]
+    },
+    {
+      "id": "divine sonship",
+      "label": "divine sonship",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "Behold, I am Jesus Christ. I am the Father and the Son." }
+      ]
+    },
+    {
+      "id": "sinless life",
+      "label": "sinless life",
+      "references": []
+    },
+    {
+      "id": "all mankind",
+      "label": "all mankind",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "In me shall all mankind have life, and that eternally, even they who shall believe on my name." }
+      ]
+    },
+    {
+      "id": "premortal preparation",
+      "label": "premortal preparation",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people." },
+        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning." }
+      ]
+    },
+    {
+      "id": "redemption",
+      "label": "redemption",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people." }
+      ]
+    },
+    {
+      "id": "eternal life",
+      "label": "eternal life",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "In me shall all mankind have life, and that eternally, even they who shall believe on my name." }
+      ]
+    },
+    {
+      "id": "belief",
+      "label": "belief",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "In me shall all mankind have life, and that eternally, even they who shall believe on my name." }
+      ]
+    },
+    {
+      "id": "adoption as children of god",
+      "label": "adoption as children of god",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "They shall become my sons and my daughters." }
+      ]
+    },
+    {
+      "id": "submission to god's will",
+      "label": "submission to god's will",
+      "references": [
+        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+      ]
+    },
+    {
+      "id": "human agency",
+      "label": "human agency",
+      "references": [
+        { "ref": "Moses 4:1–2", "quote": "Satan...came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor." }
+      ]
+    },
+    {
+      "id": "god",
+      "label": "god",
+      "references": [
+        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+      ]
+    },
+    {
+      "id": "false redemption",
+      "label": "false redemption",
+      "references": [
+        { "ref": "Moses 4:1–2", "quote": "Satan...came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor." }
+      ]
+    },
+    {
+      "id": "divine appointment",
+      "label": "divine appointment",
+      "references": [
+        { "ref": "Abraham 3:27", "quote": "And the Lord said: Whom shall I send? And one answered like unto the Son of Man: Here am I, send me. And the Lord said: I will send the first." }
+      ]
+    },
+    {
+      "id": "the redeemer",
+      "label": "the redeemer",
+      "references": [
+        { "ref": "Abraham 3:27", "quote": "And one answered like unto the Son of Man: Here am I, send me. And the Lord said: I will send the first." }
+      ]
+    }
   ],
   "edges": [
     { "source": "sin", "target": "man from god", "label": "separates" },
@@ -39,6 +175,8 @@
     { "source": "atonement", "target": "submission to god's will", "label": "requires" },
     { "source": "atonement", "target": "human agency", "label": "preserves" },
     { "source": "atonement", "target": "god", "label": "glorifies" },
-    { "source": "false redemption", "target": "human agency", "label": "would have eliminated" }
+    { "source": "false redemption", "target": "human agency", "label": "would have eliminated" },
+    { "source": "atonement", "target": "divine appointment", "label": "required" },
+    { "source": "god", "target": "the redeemer", "label": "appointed" }
   ]
 }

@@ -17,7 +17,7 @@ A theological knowledge graph focused on the Atonement of Jesus Christ, built in
 - `public/graph.json` — the persistent graph (nodes + edges), updated after each approved session
 - Nodes are deduplicated by `id` (lowercase)
 - Edges are directed: `source → target` with a `label`
-- Nodes have a `references` array (e.g. `["Ether 3:14", "Moses 4:1–2"]`) — always populate this when writing new nodes based on the source passage. Clicking a node shows these in a side panel.
+- Nodes have a `references` array of objects: `[{ "ref": "Ether 3:14", "quote": "..." }]` — always populate this when writing new nodes, using the exact text from the source passage. Clicking a node shows the reference and quote in a side panel.
 
 ## Tech Stack
 - React + Vite (`npm run dev`, `npm run build`)
