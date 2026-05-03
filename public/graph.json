@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    { "id": "sin", "label": "sin" },
+    { "id": "man from god", "label": "man from god" },
+    { "id": "penalty", "label": "penalty" },
+    { "id": "atonement", "label": "atonement" },
+    { "id": "repentance", "label": "repentance" },
+    { "id": "atonement's effect", "label": "atonement's effect" },
+    { "id": "man to god", "label": "man to god" }
+  ],
+  "edges": [
+    { "source": "sin", "target": "man from god", "label": "separates" },
+    { "source": "sin", "target": "penalty", "label": "requires" },
+    { "source": "atonement", "target": "sin", "label": "suffers penalty of" },
+    { "source": "atonement", "target": "sin", "label": "removes effects of" },
+    { "source": "repentance", "target": "atonement's effect", "label": "conditions" },
+    { "source": "atonement", "target": "man to god", "label": "reconciles" }
+  ]
+}
