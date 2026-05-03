@@ -32,6 +32,13 @@ export default function GraphView({ data }) {
   const [highlightLinks, setHighlightLinks] = useState(new Set())
   const [selectedNode, setSelectedNode] = useState(null)
   const [activeCategory, setActiveCategory] = useState(null)
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 640)
+
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 640)
+    window.addEventListener('resize', handler)
+    return () => window.removeEventListener('resize', handler)
+  }, [])
 
   // Build adjacency for highlight-on-click
   const nodeLinks = useRef({})
@@ -206,8 +213,22 @@ export default function GraphView({ data }) {
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-      {/* Left filter sidebar */}
-      <div style={{
+      {/* Filter sidebar (desktop) / bottom pill bar (mobile) */}
+      <div style={isMobile ? {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        flexDirection: 'row',
+        overflowX: 'auto',
+        padding: '10px 12px',
+        gap: 8,
+        background: 'rgba(10, 10, 25, 0.92)',
+        borderTop: '1px solid #2c3a5a',
+        boxSizing: 'border-box',
+        zIndex: 1000,
+      } : {
         position: 'absolute',
         top: 0,
         left: 0,
@@ -222,7 +243,9 @@ export default function GraphView({ data }) {
         flexDirection: 'column',
         gap: 8,
       }}>
-        <p style={{ color: '#666', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 4px' }}>Filter by topic</p>
+        {!isMobile && (
+          <p style={{ color: '#666', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 4px' }}>Filter by topic</p>
+        )}
         {CATEGORIES.map(cat => {
           const isActive = activeCategory === cat.id
           return (
@@ -233,7 +256,7 @@ export default function GraphView({ data }) {
                 display: 'flex',
                 alignItems: 'center',
                 gap: 8,
-                padding: '8px 10px',
+                padding: isMobile ? '12px 14px' : '8px 10px',
                 background: isActive ? `${cat.color}22` : 'transparent',
                 border: `1px solid ${isActive ? cat.color : '#2c3a5a'}`,
                 borderRadius: 6,
@@ -242,6 +265,7 @@ export default function GraphView({ data }) {
                 cursor: 'pointer',
                 textAlign: 'left',
                 transition: 'all 0.15s',
+                flexShrink: 0,
               }}
             >
               <span style={{
@@ -276,7 +300,20 @@ export default function GraphView({ data }) {
       />
 
       {selectedNode && (
-        <div style={{
+        <div style={isMobile ? {
+          position: 'absolute',
+          bottom: 60,
+          left: 0,
+          right: 0,
+          height: '60%',
+          background: 'rgba(15, 15, 35, 0.95)',
+          borderTop: '1px solid #2c3a5a',
+          borderRadius: '16px 16px 0 0',
+          padding: '24px 20px',
+          boxSizing: 'border-box',
+          overflowY: 'auto',
+          zIndex: 999,
+        } : {
           position: 'absolute',
           top: 0,
           right: 0,
