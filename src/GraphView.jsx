@@ -1,10 +1,11 @@
-import { useRef, useCallback, useState } from 'react'
+import { useRef, useCallback, useState, useEffect } from 'react'
 import ForceGraph2D from 'react-force-graph-2d'
 
 export default function GraphView({ data }) {
   const fgRef = useRef()
   const [highlightNodes, setHighlightNodes] = useState(new Set())
   const [highlightLinks, setHighlightLinks] = useState(new Set())
+  const [selectedNode, setSelectedNode] = useState(null)
 
   // Build adjacency for highlight-on-click
   const nodeLinks = useRef({})
@@ -17,16 +18,30 @@ export default function GraphView({ data }) {
     nodeLinks.current[e.target].links.add(e)
   })
 
+  // Build a lookup from id → full node data (for references)
+  const nodeDataById = useRef({})
+  data.nodes.forEach(n => { nodeDataById.current[n.id] = n })
+
+  useEffect(() => {
+    const fg = fgRef.current
+    if (!fg) return
+    fg.d3Force('charge').strength(-600)
+    fg.d3Force('link').distance(180)
+  }, [])
+
   const handleNodeClick = useCallback(node => {
     const info = nodeLinks.current[node.id]
-    if (!info) return
-    setHighlightNodes(new Set([node.id, ...info.neighbors]))
-    setHighlightLinks(new Set(info.links))
+    if (info) {
+      setHighlightNodes(new Set([node.id, ...info.neighbors]))
+      setHighlightLinks(new Set(info.links))
+    }
+    setSelectedNode(nodeDataById.current[node.id] ?? node)
   }, [])
 
   const handleBackgroundClick = useCallback(() => {
     setHighlightNodes(new Set())
     setHighlightLinks(new Set())
+    setSelectedNode(null)
   }, [])
 
   const graphNodes = data.nodes.map(n => ({ id: n.id, label: n.label }))
@@ -64,7 +79,6 @@ export default function GraphView({ data }) {
     const len = Math.sqrt(dx * dx + dy * dy)
     if (len === 0) return
 
-    // Draw line
     ctx.beginPath()
     ctx.moveTo(start.x, start.y)
     ctx.lineTo(end.x, end.y)
@@ -72,7 +86,6 @@ export default function GraphView({ data }) {
     ctx.lineWidth = (isHighlighted ? 1.5 : 1) / globalScale
     ctx.stroke()
 
-    // Draw arrowhead
     const arrowLen = 8 / globalScale
     const angle = Math.atan2(dy, dx)
     const ax = end.x - (10 / globalScale) * Math.cos(angle)
@@ -85,7 +98,6 @@ export default function GraphView({ data }) {
     ctx.fillStyle = isHighlighted ? '#aaaaaa' : '#2a2a3a'
     ctx.fill()
 
-    // Draw edge label
     if (link.label && isHighlighted) {
       const midX = (start.x + end.x) / 2
       const midY = (start.y + end.y) / 2
@@ -99,23 +111,79 @@ export default function GraphView({ data }) {
   }, [highlightLinks])
 
   return (
-    <ForceGraph2D
-      ref={fgRef}
-      graphData={{ nodes: graphNodes, links: graphLinks }}
-      backgroundColor="#1a1a2e"
-      nodeCanvasObject={nodeCanvasObject}
-      nodeCanvasObjectMode={() => 'replace'}
-      linkCanvasObject={linkCanvasObject}
-      linkCanvasObjectMode={() => 'replace'}
-      onNodeClick={handleNodeClick}
-      onBackgroundClick={handleBackgroundClick}
-      nodeLabel={node => node.label || node.id}
-      linkDirectionalArrowLength={0}
-      d3AlphaDecay={0.01}
-      d3VelocityDecay={0.2}
-      cooldownTicks={200}
-      onEngineStop={() => fgRef.current?.zoomToFit(400, 80)}
-      d3Force={('charge', undefined)}
-    />
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <ForceGraph2D
+        ref={fgRef}
+        graphData={{ nodes: graphNodes, links: graphLinks }}
+        backgroundColor="#1a1a2e"
+        nodeCanvasObject={nodeCanvasObject}
+        nodeCanvasObjectMode={() => 'replace'}
+        linkCanvasObject={linkCanvasObject}
+        linkCanvasObjectMode={() => 'replace'}
+        onNodeClick={handleNodeClick}
+        onBackgroundClick={handleBackgroundClick}
+        nodeLabel={node => node.label || node.id}
+        linkDirectionalArrowLength={0}
+        d3AlphaDecay={0.01}
+        d3VelocityDecay={0.2}
+        cooldownTicks={200}
+        onEngineStop={() => fgRef.current?.zoomToFit(400, 80)}
+      />
+
+      {selectedNode && (
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          width: 280,
+          height: '100%',
+          background: 'rgba(15, 15, 35, 0.95)',
+          borderLeft: '1px solid #2c3a5a',
+          padding: '24px 20px',
+          boxSizing: 'border-box',
+          overflowY: 'auto',
+        }}>
+          <button
+            onClick={() => setSelectedNode(null)}
+            style={{
+              position: 'absolute',
+              top: 12,
+              right: 14,
+              background: 'none',
+              border: 'none',
+              color: '#aaa',
+              fontSize: 20,
+              cursor: 'pointer',
+              lineHeight: 1,
+            }}
+          >×</button>
+
+          <h2 style={{ color: '#7ab3e8', fontSize: 16, fontWeight: 600, marginBottom: 16, textTransform: 'capitalize' }}>
+            {selectedNode.label || selectedNode.id}
+          </h2>
+
+          <p style={{ color: '#888', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
+            Scripture References
+          </p>
+
+          {selectedNode.references && selectedNode.references.length > 0 ? (
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {selectedNode.references.map(ref => (
+                <li key={ref} style={{
+                  color: '#ccc',
+                  fontSize: 14,
+                  padding: '6px 0',
+                  borderBottom: '1px solid #1e2a3a',
+                }}>
+                  {ref}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p style={{ color: '#555', fontSize: 13, fontStyle: 'italic' }}>No references recorded yet.</p>
+          )}
+        </div>
+      )}
+    </div>
   )
 }

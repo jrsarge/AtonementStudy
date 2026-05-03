@@ -1,12 +1,25 @@
 {
   "nodes": [
-    { "id": "sin", "label": "sin" },
-    { "id": "man from god", "label": "man from god" },
-    { "id": "penalty", "label": "penalty" },
-    { "id": "atonement", "label": "atonement" },
-    { "id": "repentance", "label": "repentance" },
-    { "id": "atonement's effect", "label": "atonement's effect" },
-    { "id": "man to god", "label": "man to god" }
+    { "id": "sin", "label": "sin", "references": ["Bible Dictionary: Atonement"] },
+    { "id": "man from god", "label": "man from god", "references": ["Bible Dictionary: Atonement"] },
+    { "id": "penalty", "label": "penalty", "references": ["Bible Dictionary: Atonement"] },
+    { "id": "atonement", "label": "atonement", "references": ["Bible Dictionary: Atonement", "Ether 3:14", "Moses 4:1–2"] },
+    { "id": "repentance", "label": "repentance", "references": ["Bible Dictionary: Atonement"] },
+    { "id": "atonement's effect", "label": "atonement's effect", "references": ["Bible Dictionary: Atonement"] },
+    { "id": "man to god", "label": "man to god", "references": ["Bible Dictionary: Atonement"] },
+    { "id": "foreordination", "label": "foreordination", "references": ["Ether 3:14", "Moses 4:1–2", "Abr. 3:27"] },
+    { "id": "divine sonship", "label": "divine sonship", "references": ["Ether 3:14"] },
+    { "id": "sinless life", "label": "sinless life", "references": [] },
+    { "id": "all mankind", "label": "all mankind", "references": ["Ether 3:14"] },
+    { "id": "premortal preparation", "label": "premortal preparation", "references": ["Ether 3:14", "Moses 4:1–2"] },
+    { "id": "redemption", "label": "redemption", "references": ["Ether 3:14"] },
+    { "id": "eternal life", "label": "eternal life", "references": ["Ether 3:14"] },
+    { "id": "belief", "label": "belief", "references": ["Ether 3:14"] },
+    { "id": "adoption as children of god", "label": "adoption as children of god", "references": ["Ether 3:14"] },
+    { "id": "submission to god's will", "label": "submission to god's will", "references": ["Moses 4:1–2"] },
+    { "id": "human agency", "label": "human agency", "references": ["Moses 4:1–2"] },
+    { "id": "god", "label": "god", "references": ["Moses 4:1–2"] },
+    { "id": "false redemption", "label": "false redemption", "references": ["Moses 4:1–2"] }
   ],
   "edges": [
     { "source": "sin", "target": "man from god", "label": "separates" },
@@ -14,6 +27,18 @@
     { "source": "atonement", "target": "sin", "label": "suffers penalty of" },
     { "source": "atonement", "target": "sin", "label": "removes effects of" },
     { "source": "repentance", "target": "atonement's effect", "label": "conditions" },
-    { "source": "atonement", "target": "man to god", "label": "reconciles" }
+    { "source": "atonement", "target": "man to god", "label": "reconciles" },
+    { "source": "foreordination", "target": "atonement", "label": "qualified the messiah for" },
+    { "source": "divine sonship", "target": "atonement", "label": "qualified the messiah for" },
+    { "source": "sinless life", "target": "atonement", "label": "qualified the messiah for" },
+    { "source": "atonement", "target": "all mankind", "label": "covers" },
+    { "source": "premortal preparation", "target": "redemption", "label": "enables" },
+    { "source": "redemption", "target": "eternal life", "label": "grants" },
+    { "source": "belief", "target": "eternal life", "label": "conditions" },
+    { "source": "redemption", "target": "adoption as children of god", "label": "enables" },
+    { "source": "atonement", "target": "submission to god's will", "label": "requires" },
+    { "source": "atonement", "target": "human agency", "label": "preserves" },
+    { "source": "atonement", "target": "god", "label": "glorifies" },
+    { "source": "false redemption", "target": "human agency", "label": "would have eliminated" }
   ]
 }
