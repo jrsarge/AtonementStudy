@@ -8,20 +8,6 @@
       ]
     },
     {
-      "id": "man from god",
-      "label": "man from god",
-      "references": [
-        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
-      ]
-    },
-    {
-      "id": "penalty",
-      "label": "penalty",
-      "references": [
-        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
-      ]
-    },
-    {
       "id": "atonement",
       "label": "atonement",
       "references": [
@@ -41,25 +27,10 @@
       ]
     },
     {
-      "id": "atonement's effect",
-      "label": "atonement's effect",
-      "references": [
-        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
-      ]
-    },
-    {
       "id": "man to god",
       "label": "man to god",
       "references": [
         { "ref": "Bible Dictionary: Atonement", "quote": "To reconcile man to God." }
-      ]
-    },
-    {
-      "id": "foreordination",
-      "label": "foreordination",
-      "references": [
-        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." },
-        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
@@ -103,13 +74,6 @@
     {
       "id": "eternal life",
       "label": "eternal life",
-      "references": [
-        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
-      ]
-    },
-    {
-      "id": "belief",
-      "label": "belief",
       "references": [
         { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
@@ -226,13 +190,6 @@
       ]
     },
     {
-      "id": "justification of many",
-      "label": "justification of many",
-      "references": [
-        { "ref": "Isaiah 53:11", "quote": "He shall see of the travail of his soul, and shall be satisfied: by his knowledge shall my righteous servant justify many; for he shall bear their iniquities." }
-      ]
-    },
-    {
       "id": "intercession for transgressors",
       "label": "intercession for transgressors",
       "references": [
@@ -273,6 +230,7 @@
       "id": "faith",
       "label": "faith",
       "references": [
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." },
         { "ref": "Mosiah 3:9", "quote": "And lo, he cometh unto his own, that salvation might come unto the children of men even through faith on his name; and even after all this they shall consider him a man, and say that he hath a devil, and shall scourge him, and shall crucify him." }
       ]
     },
@@ -305,13 +263,6 @@
       ]
     },
     {
-      "id": "liberation from death",
-      "label": "liberation from death",
-      "references": [
-        { "ref": "Alma 7:12", "quote": "And he will take upon him death, that he may loose the bands of death which bind his people; and he will take upon him their infirmities, that his bowels may be filled with mercy, according to the flesh, that he may know according to the flesh how to succor his people according to their infirmities." }
-      ]
-    },
-    {
       "id": "personal suffering for sin",
       "label": "personal suffering for sin",
       "references": [
@@ -329,7 +280,10 @@
       "id": "universal resurrection",
       "label": "universal resurrection",
       "references": [
-        { "ref": "1 Corinthians 15:22", "quote": "For as in Adam all die, even so in Christ shall all be made alive." }
+        { "ref": "1 Corinthians 15:22", "quote": "For as in Adam all die, even so in Christ shall all be made alive." },
+        { "ref": "Alma 7:12", "quote": "And he will take upon him death, that he may loose the bands of death which bind his people; and he will take upon him their infirmities, that his bowels may be filled with mercy, according to the flesh, that he may know according to the flesh how to succor his people according to their infirmities." },
+        { "ref": "2 Nephi 9:22", "quote": "And he suffereth this that the resurrection might pass upon all men, that all might stand before him at the great and judgment day." },
+        { "ref": "2 Nephi 9:13", "quote": "O how great the plan of our God! For on the other hand, the paradise of God must deliver up the spirits of the righteous, and the grave deliver up the body of the righteous; and the spirit and the body is restored to itself again, and all men become incorruptible, and immortal, and they are living souls, having a perfect knowledge like unto us in the flesh, save it be that our knowledge shall be perfect." }
       ]
     },
     {
@@ -342,7 +296,10 @@
     {
       "id": "forgiveness of sins",
       "label": "forgiveness of sins",
-      "references": []
+      "references": [
+        { "ref": "Isaiah 53:11", "quote": "He shall see of the travail of his soul, and shall be satisfied: by his knowledge shall my righteous servant justify many; for he shall bear their iniquities." },
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+      ]
     },
     {
       "id": "ordinances of salvation",
@@ -374,7 +331,8 @@
       "label": "those without the law",
       "references": [
         { "ref": "Mosiah 15:24", "quote": "And these are those who have part in the first resurrection; and these are they that have died before Christ came, in their ignorance, not having salvation declared unto them. And thus the Lord bringeth about the restoration of these; and they have a part in the first resurrection, or have eternal life, being redeemed by the Lord." },
-        { "ref": "Moroni 8:22", "quote": "For behold that all little children are alive in Christ, and also all they that are without the law. For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing—" }
+        { "ref": "Moroni 8:22", "quote": "For behold that all little children are alive in Christ, and also all they that are without the law. For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing—" },
+        { "ref": "2 Nephi 9:25–26", "quote": "Wherefore, he has given a law; and where there is no law given there is no punishment; and where there is no punishment there is no condemnation; and where there is no condemnation the mercies of the Holy One of Israel have claim upon them, because of the atonement; for they are delivered by the power of him. For the atonement satisfieth the demands of his justice upon all those who have not the law given to them, that they are delivered from that awful monster, death and hell, and the devil, and the lake of fire and brimstone, which is endless torment; and they are restored to that God who gave them breath, which is the Holy One of Israel." }
       ]
     },
     {
@@ -388,29 +346,95 @@
       "id": "condemnation",
       "label": "condemnation",
       "references": [
-        { "ref": "Moroni 8:22", "quote": "For behold that all little children are alive in Christ, and also all they that are without the law. For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing—" }
+        { "ref": "Moroni 8:22", "quote": "For behold that all little children are alive in Christ, and also all they that are without the law. For the power of redemption cometh on all them that have no law; wherefore, he that is not condemned, or he that is under no condemnation, cannot repent; and unto such baptism availeth nothing—" },
+        { "ref": "2 Nephi 9:25", "quote": "Wherefore, he has given a law; and where there is no law given there is no punishment; and where there is no punishment there is no condemnation; and where there is no condemnation the mercies of the Holy One of Israel have claim upon them, because of the atonement; for they are delivered by the power of him." }
       ]
     },
     {
       "id": "demands of justice",
       "label": "demands of justice",
-      "references": []
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." },
+        { "ref": "2 Nephi 2:5", "quote": "And men are instructed sufficiently that they know good from evil. And the law is given unto men. And by the law no flesh is justified; or, by the law men are cut off. Yea, by the temporal law they were cut off; and also, by the spiritual law they perish from that which is good, and become miserable forever." },
+        { "ref": "2 Nephi 2:7", "quote": "Behold, he offereth himself a sacrifice for sin, to answer the ends of the law, unto all those who have a broken heart and a contrite spirit; and unto none else can the ends of the law be answered." },
+        { "ref": "2 Nephi 2:10", "quote": "And because of the intercession for all, all men come unto God; wherefore, they stand in the presence of him, to be judged of him according to the truth and holiness which is in him. Wherefore, the ends of the law which the Holy One hath given, unto the inflicting of the punishment which is affixed, which punishment that is affixed is in opposition to that of the happiness which is affixed, to answer the ends of the atonement—" },
+        { "ref": "2 Nephi 9:26", "quote": "For the atonement satisfieth the demands of his justice upon all those who have not the law given to them, that they are delivered from that awful monster, death and hell, and the devil, and the lake of fire and brimstone, which is endless torment; and they are restored to that God who gave them breath, which is the Holy One of Israel." }
+      ]
+    },
+    {
+      "id": "broken heart and contrite spirit",
+      "label": "broken heart and contrite spirit",
+      "references": [
+        { "ref": "2 Nephi 2:7", "quote": "Behold, he offereth himself a sacrifice for sin, to answer the ends of the law, unto all those who have a broken heart and a contrite spirit; and unto none else can the ends of the law be answered." }
+      ]
+    },
+    {
+      "id": "opposition",
+      "label": "opposition",
+      "references": [
+        { "ref": "2 Nephi 2:11", "quote": "For it must needs be, that there is an opposition in all things. If not so, my firstborn in the wilderness, righteousness could not be brought to pass, neither wickedness, neither holiness nor misery, neither good nor bad. Wherefore, all things must needs be a compound in one; wherefore, if it should be one body it must needs remain as dead, having no life neither death, nor corruption nor incorruption, happiness nor misery, neither sense nor insensibility." },
+        { "ref": "2 Nephi 2:16", "quote": "Wherefore, the Lord God gave unto man that he should act for himself. Wherefore, man could not act for himself save it should be that he was enticed by the one or the other." }
+      ]
+    },
+    {
+      "id": "mortal existence",
+      "label": "mortal existence",
+      "references": [
+        { "ref": "2 Nephi 2:25", "quote": "Adam fell that men might be; and men are, that they might have joy." }
+      ]
+    },
+    {
+      "id": "possibility of joy",
+      "label": "possibility of joy",
+      "references": [
+        { "ref": "2 Nephi 2:25", "quote": "Adam fell that men might be; and men are, that they might have joy." }
+      ]
+    },
+    {
+      "id": "freedom from the fall",
+      "label": "freedom from the fall",
+      "references": [
+        { "ref": "2 Nephi 2:26", "quote": "And the Messiah cometh in the fulness of time, that he may redeem the children of men from the fall. And because that they are redeemed from the fall they have become free forever, knowing good from evil; to act for themselves and not to be acted upon, save it be by the punishment of the law at the great and last day, according to the commandments which God hath given." }
+      ]
+    },
+    {
+      "id": "spiritual death",
+      "label": "spiritual death",
+      "references": [
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." },
+        { "ref": "2 Nephi 9:6", "quote": "For as death hath passed upon all men, to fulfil the merciful plan of the great Creator, there must needs be a power of resurrection, and the resurrection must needs come unto man by reason of the fall; and the fall came by reason of transgression; and because man became fallen they were cut off from the presence of the Lord." },
+        { "ref": "2 Nephi 9:10", "quote": "O how great the goodness of our God, who prepareth a way for our escape from the grasp of this awful monster; yea, that monster, death and hell, which I call the death of the body, and also the death of the spirit." }
+      ]
+    },
+    {
+      "id": "infinite nature of atonement",
+      "label": "infinite nature of atonement",
+      "references": [
+        { "ref": "2 Nephi 9:7", "quote": "Wherefore, it must needs be an infinite atonement—save it should be an infinite atonement this corruption could not put on incorruption. Wherefore, the first judgment which came upon man must needs have remained to an endless duration. And if so, this flesh must have laid down to rot and to crumble to its mother earth, to rise no more." }
+      ]
+    },
+    {
+      "id": "kingdom of god",
+      "label": "kingdom of god",
+      "references": [
+        { "ref": "2 Nephi 9:18", "quote": "But, behold, the righteous, the saints of the Holy One of Israel, they who have believed in the Holy One of Israel, they who have endured the crosses of the world, and despised the shame of it, they shall inherit the kingdom of God, which was prepared for them from the foundation of the world, and their joy shall be full forever." },
+        { "ref": "2 Nephi 9:19", "quote": "O the greatness of the mercy of our God, the Holy One of Israel! For he delivereth his saints from that awful monster the devil, and death, and hell, and that lake of fire and brimstone, which is endless torment." }
+      ]
     }
   ],
   "edges": [
-    { "source": "sin", "target": "man from god", "label": "separates" },
-    { "source": "sin", "target": "penalty", "label": "requires" },
+    { "source": "sin", "target": "spiritual death", "label": "causes" },
     { "source": "atonement", "target": "sin", "label": "suffers penalty of" },
     { "source": "atonement", "target": "sin", "label": "removes effects of" },
-    { "source": "repentance", "target": "atonement's effect", "label": "conditions" },
+    { "source": "repentance", "target": "forgiveness of sins", "label": "conditions" },
     { "source": "atonement", "target": "man to god", "label": "reconciles" },
-    { "source": "foreordination", "target": "atonement", "label": "qualified the messiah for" },
+    { "source": "premortal preparation", "target": "atonement", "label": "qualified the messiah for" },
     { "source": "divine sonship", "target": "atonement", "label": "qualified the messiah for" },
     { "source": "christ's sinless life", "target": "atonement", "label": "qualified the messiah for" },
     { "source": "atonement", "target": "all mankind", "label": "covers" },
     { "source": "premortal preparation", "target": "redemption", "label": "enables" },
     { "source": "redemption", "target": "eternal life", "label": "grants" },
-    { "source": "belief", "target": "eternal life", "label": "conditions" },
+    { "source": "faith", "target": "eternal life", "label": "conditions" },
     { "source": "redemption", "target": "adoption as children of god", "label": "enables" },
     { "source": "atonement", "target": "christ's submission to god's will", "label": "requires" },
     { "source": "atonement", "target": "human agency", "label": "preserves" },
@@ -418,7 +442,7 @@
     { "source": "false redemption", "target": "human agency", "label": "would have eliminated" },
     { "source": "atonement", "target": "divine appointment", "label": "required" },
     { "source": "god", "target": "the redeemer", "label": "appointed" },
-    { "source": "grand council", "target": "foreordination", "label": "established" },
+    { "source": "grand council", "target": "premortal preparation", "label": "established" },
     { "source": "grand council", "target": "atonement", "label": "qualified" },
     { "source": "atonement", "target": "christ's suffering for sins", "label": "included" },
     { "source": "atonement", "target": "christ's shedding of blood", "label": "included" },
@@ -427,7 +451,6 @@
     { "source": "christ's death", "target": "christ's resurrection", "label": "preceded" },
     { "source": "christ's suffering for sins", "target": "healing", "label": "produces" },
     { "source": "atonement", "target": "offering for sin", "label": "constituted" },
-    { "source": "atonement", "target": "justification of many", "label": "produces" },
     { "source": "atonement", "target": "intercession for transgressors", "label": "included" },
     { "source": "god", "target": "christ's suffering for sins", "label": "directed" },
     { "source": "christ's condescension", "target": "atonement", "label": "enabled" },
@@ -438,7 +461,7 @@
     { "source": "christ's birth", "target": "christ's condescension", "label": "constituted" },
     { "source": "christ's suffering for sins", "target": "mercy", "label": "produced" },
     { "source": "christ's suffering for sins", "target": "christ's power to succor", "label": "enables" },
-    { "source": "christ's death", "target": "liberation from death", "label": "enables" },
+    { "source": "christ's death", "target": "universal resurrection", "label": "enables" },
     { "source": "repentance", "target": "personal suffering for sin", "label": "prevents" },
     { "source": "unrepentance", "target": "personal suffering for sin", "label": "requires" },
     { "source": "christ's submission to god's will", "target": "atonement", "label": "completed" },
@@ -457,6 +480,18 @@
     { "source": "condemnation", "target": "ordinances of salvation", "label": "activates" },
     { "source": "sin", "target": "demands of justice", "label": "triggers" },
     { "source": "atonement", "target": "demands of justice", "label": "satisfies" },
-    { "source": "demands of justice", "target": "man to god", "label": "otherwise prevents" }
+    { "source": "demands of justice", "target": "man to god", "label": "otherwise prevents" },
+    { "source": "broken heart and contrite spirit", "target": "atonement", "label": "conditions access to" },
+    { "source": "opposition", "target": "human agency", "label": "makes possible" },
+    { "source": "fall of adam", "target": "mortal existence", "label": "enabled" },
+    { "source": "fall of adam", "target": "possibility of joy", "label": "enabled" },
+    { "source": "atonement", "target": "freedom from the fall", "label": "grants" },
+    { "source": "human agency", "target": "eternal life", "label": "enables choice of" },
+    { "source": "fall of adam", "target": "spiritual death", "label": "caused" },
+    { "source": "atonement", "target": "spiritual death", "label": "overcomes" },
+    { "source": "infinite nature of atonement", "target": "universal resurrection", "label": "enables" },
+    { "source": "christ's suffering for sins", "target": "universal resurrection", "label": "enables" },
+    { "source": "universal resurrection", "target": "judgment", "label": "precedes" },
+    { "source": "atonement", "target": "kingdom of god", "label": "opens" }
   ]
 }
