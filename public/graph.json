@@ -156,7 +156,8 @@
         { "ref": "Luke 22:44", "quote": "And being in an agony he prayed more earnestly: and his sweat was as it were great drops of blood falling down to the ground." },
         { "ref": "Mosiah 3:7", "quote": "And lo, he shall suffer temptations, and pain of body, hunger, thirst, and fatigue, even more than man can suffer, except it be unto death; for behold, blood cometh from every pore, so great shall be his anguish for the wickedness and the abominations of his people." },
         { "ref": "Mosiah 3:11", "quote": "For behold, and also his blood atoneth for the sins of those who have fallen by the transgression of Adam, who have died not knowing the will of God concerning them, or who have ignorantly sinned." },
-        { "ref": "D&C 19:18", "quote": "Which suffering caused myself, even God, the greatest of all, to tremble because of pain, and to bleed at every pore, and to suffer both body and spirit—and would that I might not drink the bitter cup, and shrink—" }
+        { "ref": "D&C 19:18", "quote": "Which suffering caused myself, even God, the greatest of all, to tremble because of pain, and to bleed at every pore, and to suffer both body and spirit—and would that I might not drink the bitter cup, and shrink—" },
+        { "ref": "Matt. 26:28", "quote": "For this is my blood of the new testament, which is shed for many for the remission of sins." }
       ]
     },
     {
@@ -298,7 +299,15 @@
       "label": "forgiveness of sins",
       "references": [
         { "ref": "Isaiah 53:11", "quote": "He shall see of the travail of his soul, and shall be satisfied: by his knowledge shall my righteous servant justify many; for he shall bear their iniquities." },
-        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." }
+        { "ref": "Bible Dictionary: Atonement", "quote": "To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." },
+        { "ref": "Matt. 26:28", "quote": "For this is my blood of the new testament, which is shed for many for the remission of sins." }
+      ]
+    },
+    {
+      "id": "new covenant",
+      "label": "new covenant",
+      "references": [
+        { "ref": "Matt. 26:28", "quote": "For this is my blood of the new testament, which is shed for many for the remission of sins." }
       ]
     },
     {
@@ -492,6 +501,9 @@
     { "source": "infinite nature of atonement", "target": "universal resurrection", "label": "enables" },
     { "source": "christ's suffering for sins", "target": "universal resurrection", "label": "enables" },
     { "source": "universal resurrection", "target": "judgment", "label": "precedes" },
-    { "source": "atonement", "target": "kingdom of god", "label": "opens" }
+    { "source": "atonement", "target": "kingdom of god", "label": "opens" },
+    { "source": "christ's shedding of blood", "target": "forgiveness of sins", "label": "enables" },
+    { "source": "christ's shedding of blood", "target": "new covenant", "label": "establishes" },
+    { "source": "new covenant", "target": "forgiveness of sins", "label": "promises" }
   ]
 }

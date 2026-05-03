@@ -1,11 +1,37 @@
-import { useRef, useCallback, useState, useEffect } from 'react'
+import { useRef, useCallback, useState, useEffect, useMemo } from 'react'
 import ForceGraph2D from 'react-force-graph-2d'
+
+const OUTCOME_NODES = new Set([
+  'forgiveness of sins', 'salvation', 'eternal life', 'redemption', 'healing', 'mercy',
+  'adoption as children of god', 'universal resurrection', 'immortal bodies', 'freedom from the fall',
+  'kingdom of god', 'first resurrection', 'possibility of joy',
+])
+
+const HUMAN_CONDITION_NODES = new Set([
+  'faith', 'repentance', 'broken heart and contrite spirit', 'obedience to commandments',
+  'ordinances of salvation', 'human agency',
+])
+
+function getNodeColor(id) {
+  if (id.startsWith("christ's")) return '#4a90d9'
+  if (OUTCOME_NODES.has(id)) return '#5ab870'
+  if (HUMAN_CONDITION_NODES.has(id)) return '#e8a838'
+  return '#8a6bbf'
+}
+
+const CATEGORIES = [
+  { id: 'christs',     label: "Christ's",         color: '#4a90d9', test: id => id.startsWith("christ's") },
+  { id: 'outcomes',    label: 'Outcomes',          color: '#5ab870', test: id => OUTCOME_NODES.has(id) },
+  { id: 'human',       label: 'Human Conditions',  color: '#e8a838', test: id => HUMAN_CONDITION_NODES.has(id) },
+  { id: 'foundational',label: 'Foundational',      color: '#8a6bbf', test: id => !id.startsWith("christ's") && !OUTCOME_NODES.has(id) && !HUMAN_CONDITION_NODES.has(id) },
+]
 
 export default function GraphView({ data }) {
   const fgRef = useRef()
   const [highlightNodes, setHighlightNodes] = useState(new Set())
   const [highlightLinks, setHighlightLinks] = useState(new Set())
   const [selectedNode, setSelectedNode] = useState(null)
+  const [activeCategory, setActiveCategory] = useState(null)
 
   // Build adjacency for highlight-on-click
   const nodeLinks = useRef({})
@@ -44,28 +70,96 @@ export default function GraphView({ data }) {
     setSelectedNode(null)
   }, [])
 
-  const graphNodes = data.nodes.map(n => ({ id: n.id, label: n.label }))
-  const graphLinks = data.edges.map(e => ({ source: e.source, target: e.target, label: e.label }))
+  const nodeDegree = useMemo(() => {
+    const deg = {}
+    data.edges.forEach(e => {
+      deg[e.source] = (deg[e.source] || 0) + 1
+      deg[e.target] = (deg[e.target] || 0) + 1
+    })
+    return deg
+  }, [data])
+
+  const categoryMatchIds = useMemo(() => {
+    if (!activeCategory) return null
+    const cat = CATEGORIES.find(c => c.id === activeCategory)
+    return new Set(data.nodes.filter(n => cat.test(n.id)).map(n => n.id))
+  }, [activeCategory, data])
+
+  // Expand category nodes to include shortest-path bridge nodes back to 'atonement'
+  const visibleNodeIds = useMemo(() => {
+    if (!categoryMatchIds) return null
+
+    // Build undirected adjacency: id → [neighbor ids]
+    const adj = {}
+    data.edges.forEach(e => {
+      ;(adj[e.source] = adj[e.source] || []).push(e.target)
+      ;(adj[e.target] = adj[e.target] || []).push(e.source)
+    })
+
+    const visible = new Set(categoryMatchIds)
+
+    // BFS from each category node to 'atonement', add all nodes on the path
+    categoryMatchIds.forEach(startId => {
+      if (startId === 'atonement') return
+      const parent = { [startId]: null }
+      const queue = [startId]
+      let found = false
+      outer: for (let i = 0; i < queue.length; i++) {
+        for (const neighbor of (adj[queue[i]] || [])) {
+          if (neighbor in parent) continue
+          parent[neighbor] = queue[i]
+          if (neighbor === 'atonement') { found = true; break outer }
+          queue.push(neighbor)
+        }
+      }
+      if (found) {
+        let cur = 'atonement'
+        while (cur !== null) { visible.add(cur); cur = parent[cur] }
+      }
+    })
+
+    return visible
+  }, [categoryMatchIds, data])
+
+  const graphNodes = useMemo(() => {
+    if (!visibleNodeIds) return data.nodes.map(n => ({ id: n.id, label: n.label }))
+    return data.nodes.filter(n => visibleNodeIds.has(n.id)).map(n => ({ id: n.id, label: n.label }))
+  }, [data, visibleNodeIds])
+
+  const graphLinks = useMemo(() => {
+    if (!visibleNodeIds) return data.edges.map(e => ({ source: e.source, target: e.target, label: e.label }))
+    return data.edges
+      .filter(e => visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target))
+      .map(e => ({ source: e.source, target: e.target, label: e.label }))
+  }, [data, visibleNodeIds])
 
   const nodeCanvasObject = useCallback((node, ctx, globalScale) => {
-    const isHighlighted = highlightNodes.size === 0 || highlightNodes.has(node.id)
-    const radius = 8
+    const isHighlighted = categoryMatchIds
+      ? categoryMatchIds.has(node.id)
+      : (highlightNodes.size === 0 || highlightNodes.has(node.id))
+
+    const degree = nodeDegree[node.id] || 0
+    const radius = 6 + Math.min(degree * 1.2, 16)
+    const color = getNodeColor(node.id)
+
     ctx.beginPath()
     ctx.arc(node.x, node.y, radius, 0, 2 * Math.PI)
-    ctx.fillStyle = isHighlighted ? '#4a90d9' : '#2c3a5a'
+    ctx.fillStyle = isHighlighted ? color : '#1e2235'
     ctx.fill()
-    ctx.strokeStyle = isHighlighted ? '#7ab3e8' : '#2c5f8a'
+    ctx.strokeStyle = isHighlighted ? color : '#2c3a5a'
     ctx.lineWidth = 2 / globalScale
     ctx.stroke()
 
-    const label = node.label || node.id
-    const fontSize = Math.max(10, 13 / globalScale)
-    ctx.font = `${fontSize}px sans-serif`
-    ctx.textAlign = 'center'
-    ctx.textBaseline = 'middle'
-    ctx.fillStyle = isHighlighted ? 'white' : '#555'
-    ctx.fillText(label, node.x, node.y + radius + fontSize)
-  }, [highlightNodes])
+    if (globalScale >= 0.7) {
+      const label = node.label || node.id
+      const fontSize = Math.max(10, 13 / globalScale)
+      ctx.font = `${fontSize}px sans-serif`
+      ctx.textAlign = 'center'
+      ctx.textBaseline = 'middle'
+      ctx.fillStyle = isHighlighted ? 'white' : '#555'
+      ctx.fillText(label, node.x, node.y + radius + fontSize)
+    }
+  }, [highlightNodes, nodeDegree, categoryMatchIds])
 
   const linkCanvasObject = useCallback((link, ctx, globalScale) => {
     const isHighlighted = highlightLinks.size === 0 || highlightLinks.has(link)
@@ -112,6 +206,57 @@ export default function GraphView({ data }) {
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      {/* Left filter sidebar */}
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: 160,
+        height: '100%',
+        background: 'rgba(10, 10, 25, 0.85)',
+        borderRight: '1px solid #2c3a5a',
+        padding: '16px 10px',
+        boxSizing: 'border-box',
+        zIndex: 1000,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 8,
+      }}>
+        <p style={{ color: '#666', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 4px' }}>Filter by topic</p>
+        {CATEGORIES.map(cat => {
+          const isActive = activeCategory === cat.id
+          return (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(isActive ? null : cat.id)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                padding: '8px 10px',
+                background: isActive ? `${cat.color}22` : 'transparent',
+                border: `1px solid ${isActive ? cat.color : '#2c3a5a'}`,
+                borderRadius: 6,
+                color: isActive ? cat.color : '#888',
+                fontSize: 12,
+                cursor: 'pointer',
+                textAlign: 'left',
+                transition: 'all 0.15s',
+              }}
+            >
+              <span style={{
+                width: 10,
+                height: 10,
+                borderRadius: '50%',
+                background: cat.color,
+                flexShrink: 0,
+              }} />
+              {cat.label}
+            </button>
+          )
+        })}
+      </div>
+
       <ForceGraph2D
         ref={fgRef}
         graphData={{ nodes: graphNodes, links: graphLinks }}
