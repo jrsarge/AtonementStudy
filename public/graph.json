@@ -26,8 +26,8 @@
       "label": "atonement",
       "references": [
         { "ref": "Bible Dictionary: Atonement", "quote": "To reconcile man to God. To atone is to suffer the penalty for an act of sin, thereby removing the effects of sin from the repentant sinner and allowing him to be reconciled to God." },
-        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ." },
-        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." },
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
@@ -55,105 +55,171 @@
       "id": "foreordination",
       "label": "foreordination",
       "references": [
-        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people." },
-        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." },
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
       "id": "divine sonship",
       "label": "divine sonship",
       "references": [
-        { "ref": "Ether 3:14", "quote": "Behold, I am Jesus Christ. I am the Father and the Son." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
     },
     {
-      "id": "sinless life",
-      "label": "sinless life",
-      "references": []
+      "id": "christ's sinless life",
+      "label": "christ's sinless life",
+      "references": [
+        { "ref": "Isaiah 53:9", "quote": "And he made his grave with the wicked, and with the rich in his death; because he had done no violence, neither was any deceit in his mouth." }
+      ]
     },
     {
       "id": "all mankind",
       "label": "all mankind",
       "references": [
-        { "ref": "Ether 3:14", "quote": "In me shall all mankind have life, and that eternally, even they who shall believe on my name." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
     },
     {
       "id": "premortal preparation",
       "label": "premortal preparation",
       "references": [
-        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people." },
-        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." },
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
       "id": "redemption",
       "label": "redemption",
       "references": [
-        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
     },
     {
       "id": "eternal life",
       "label": "eternal life",
       "references": [
-        { "ref": "Ether 3:14", "quote": "In me shall all mankind have life, and that eternally, even they who shall believe on my name." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
     },
     {
       "id": "belief",
       "label": "belief",
       "references": [
-        { "ref": "Ether 3:14", "quote": "In me shall all mankind have life, and that eternally, even they who shall believe on my name." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
     },
     {
       "id": "adoption as children of god",
       "label": "adoption as children of god",
       "references": [
-        { "ref": "Ether 3:14", "quote": "They shall become my sons and my daughters." }
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." }
       ]
     },
     {
       "id": "submission to god's will",
       "label": "submission to god's will",
       "references": [
-        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
       "id": "human agency",
       "label": "human agency",
       "references": [
-        { "ref": "Moses 4:1–2", "quote": "Satan...came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor." }
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
       "id": "god",
       "label": "god",
       "references": [
-        { "ref": "Moses 4:1–2", "quote": "My Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
       "id": "false redemption",
       "label": "false redemption",
       "references": [
-        { "ref": "Moses 4:1–2", "quote": "Satan...came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor." }
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." }
       ]
     },
     {
       "id": "divine appointment",
       "label": "divine appointment",
       "references": [
-        { "ref": "Abraham 3:27", "quote": "And the Lord said: Whom shall I send? And one answered like unto the Son of Man: Here am I, send me. And the Lord said: I will send the first." }
+        { "ref": "Abraham 3:27", "quote": "And the Lord said: Whom shall I send? And one answered like unto the Son of Man: Here am I, send me. And another answered and said: Here am I, send me. And the Lord said: I will send the first." }
       ]
     },
     {
       "id": "the redeemer",
       "label": "the redeemer",
       "references": [
-        { "ref": "Abraham 3:27", "quote": "And one answered like unto the Son of Man: Here am I, send me. And the Lord said: I will send the first." }
+        { "ref": "Abraham 3:27", "quote": "And the Lord said: Whom shall I send? And one answered like unto the Son of Man: Here am I, send me. And another answered and said: Here am I, send me. And the Lord said: I will send the first." }
+      ]
+    },
+    {
+      "id": "grand council",
+      "label": "grand council",
+      "references": [
+        { "ref": "Ether 3:14", "quote": "Behold, I am he who was prepared from the foundation of the world to redeem my people. Behold, I am Jesus Christ. I am the Father and the Son. In me shall all mankind have life, and that eternally, even they who shall believe on my name; and they shall become my sons and my daughters." },
+        { "ref": "Moses 4:1–2", "quote": "And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor. But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me—Father, thy will be done, and the glory be thine forever." },
+        { "ref": "Abraham 3:27", "quote": "And the Lord said: Whom shall I send? And one answered like unto the Son of Man: Here am I, send me. And another answered and said: Here am I, send me. And the Lord said: I will send the first." }
+      ]
+    },
+    {
+      "id": "christ's suffering for sins",
+      "label": "christ's suffering for sins",
+      "references": [
+        { "ref": "Luke 22:44", "quote": "And being in an agony he prayed more earnestly: and his sweat was as it were great drops of blood falling down to the ground." },
+        { "ref": "Isaiah 53:3–12", "quote": "He is despised and rejected of men; a man of sorrows, and acquainted with grief: and we hid as it were our faces from him; he was despised, and we esteemed him not. Surely he hath borne our griefs, and carried our sorrows: yet we did esteem him stricken, smitten of God, and afflicted. But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed. All we like sheep have gone astray; we have turned every one to his own way; and the Lord hath laid on him the iniquity of us all. He was oppressed, and he was afflicted, yet he opened not his mouth: he is brought as a lamb to the slaughter, and as a sheep before her shearers is dumb, so he openeth not his mouth. He was taken from prison and from judgment: and who shall declare his generation? for he was cut off out of the land of the living: for the transgression of my people was he stricken. And he made his grave with the wicked, and with the rich in his death; because he had done no violence, neither was any deceit in his mouth. Yet it pleased the Lord to bruise him; he hath put him to grief: when thou shalt make his soul an offering for sin, he shall see his seed, he shall prolong his days, and the pleasure of the Lord shall prosper in his hand. He shall see of the travail of his soul, and shall be satisfied: by his knowledge shall my righteous servant justify many; for he shall bear their iniquities. Therefore will I divide him a portion with the great, and he shall divide the spoil with the strong; because he hath poured out his soul unto death: and he was numbered with the transgressors; and he bare the sin of many, and made intercession for the transgressors." }
+      ]
+    },
+    {
+      "id": "christ's shedding of blood",
+      "label": "christ's shedding of blood",
+      "references": [
+        { "ref": "Luke 22:44", "quote": "And being in an agony he prayed more earnestly: and his sweat was as it were great drops of blood falling down to the ground." }
+      ]
+    },
+    {
+      "id": "christ's death",
+      "label": "christ's death",
+      "references": [
+        { "ref": "Isaiah 53:12", "quote": "Therefore will I divide him a portion with the great, and he shall divide the spoil with the strong; because he hath poured out his soul unto death: and he was numbered with the transgressors; and he bare the sin of many, and made intercession for the transgressors." }
+      ]
+    },
+    {
+      "id": "christ's resurrection",
+      "label": "christ's resurrection",
+      "references": []
+    },
+    {
+      "id": "healing",
+      "label": "healing",
+      "references": [
+        { "ref": "Isaiah 53:5", "quote": "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed." }
+      ]
+    },
+    {
+      "id": "offering for sin",
+      "label": "offering for sin",
+      "references": [
+        { "ref": "Isaiah 53:10", "quote": "Yet it pleased the Lord to bruise him; he hath put him to grief: when thou shalt make his soul an offering for sin, he shall see his seed, he shall prolong his days, and the pleasure of the Lord shall prosper in his hand." }
+      ]
+    },
+    {
+      "id": "justification of many",
+      "label": "justification of many",
+      "references": [
+        { "ref": "Isaiah 53:11", "quote": "He shall see of the travail of his soul, and shall be satisfied: by his knowledge shall my righteous servant justify many; for he shall bear their iniquities." }
+      ]
+    },
+    {
+      "id": "intercession for transgressors",
+      "label": "intercession for transgressors",
+      "references": [
+        { "ref": "Isaiah 53:12", "quote": "Therefore will I divide him a portion with the great, and he shall divide the spoil with the strong; because he hath poured out his soul unto death: and he was numbered with the transgressors; and he bare the sin of many, and made intercession for the transgressors." }
       ]
     }
   ],
@@ -166,7 +232,7 @@
     { "source": "atonement", "target": "man to god", "label": "reconciles" },
     { "source": "foreordination", "target": "atonement", "label": "qualified the messiah for" },
     { "source": "divine sonship", "target": "atonement", "label": "qualified the messiah for" },
-    { "source": "sinless life", "target": "atonement", "label": "qualified the messiah for" },
+    { "source": "christ's sinless life", "target": "atonement", "label": "qualified the messiah for" },
     { "source": "atonement", "target": "all mankind", "label": "covers" },
     { "source": "premortal preparation", "target": "redemption", "label": "enables" },
     { "source": "redemption", "target": "eternal life", "label": "grants" },
@@ -177,6 +243,18 @@
     { "source": "atonement", "target": "god", "label": "glorifies" },
     { "source": "false redemption", "target": "human agency", "label": "would have eliminated" },
     { "source": "atonement", "target": "divine appointment", "label": "required" },
-    { "source": "god", "target": "the redeemer", "label": "appointed" }
+    { "source": "god", "target": "the redeemer", "label": "appointed" },
+    { "source": "grand council", "target": "foreordination", "label": "established" },
+    { "source": "grand council", "target": "atonement", "label": "qualified" },
+    { "source": "atonement", "target": "christ's suffering for sins", "label": "included" },
+    { "source": "atonement", "target": "christ's shedding of blood", "label": "included" },
+    { "source": "atonement", "target": "christ's death", "label": "included" },
+    { "source": "atonement", "target": "christ's resurrection", "label": "included" },
+    { "source": "christ's death", "target": "christ's resurrection", "label": "preceded" },
+    { "source": "christ's suffering for sins", "target": "healing", "label": "produces" },
+    { "source": "atonement", "target": "offering for sin", "label": "constituted" },
+    { "source": "atonement", "target": "justification of many", "label": "produces" },
+    { "source": "atonement", "target": "intercession for transgressors", "label": "included" },
+    { "source": "god", "target": "christ's suffering for sins", "label": "directed" }
   ]
 }
